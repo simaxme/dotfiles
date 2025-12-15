@@ -1,0 +1,4 @@
+[submodule "external_repos/catppuccin-kitty"]
+	path = external_repos/catppuccin-kitty
+	url = https://github.com/catppuccin/kitty.git
+	branch = main
