@@ -5,4 +5,8 @@ bash scripts/init_git_submodules.sh
 cp ./.ideavimrc ~/
 cp ./.tmux.conf ~/
 cp ./.zshrc ~/
+
+# Kitty
 cp -r ./kitty ~/.config/
+cp ./external_repos/catppuccin-kitty/themes/diff-mocha.conf ~/.config/kitty/theme.conf
+cat ./external_repos/catppuccin-kitty/themes/mocha.conf >> ~/.config/kitty/theme.conf
