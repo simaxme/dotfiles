@@ -10,4 +10,4 @@ git config --global merge.tool nvimdiff
 git config --global commit.gpgsign true
 git config --global tag.gpgsign true
 git config --global gpg.format ssh
-git config --global user.signingkey=~/.ssh/signing_key.pub
+git config --global user.signingkey ~/.ssh/signing_key.pub
