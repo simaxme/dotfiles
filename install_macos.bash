@@ -5,7 +5,7 @@ bash scripts/init_git_submodules.sh
 cp ./.ideavimrc ~/
 cp ./.tmux.conf ~/
 cp ./.zshrc ~/
-cp ./global_gitignore ~/.gitignore
+cp ./global.gitignore ~/.gitignore
 
 # Kitty
 cp -r ./kitty ~/.config/
