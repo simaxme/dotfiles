@@ -134,7 +134,6 @@ source $ZSH/oh-my-zsh.sh
 #
 alias gitdifftool="git difftool --staged"
 alias gitlog="git log --graph --source --all"
-alias grep="ggrep"
 alias ssh-add-auto="ssh-add -t 4h ~/.ssh/signing_key"
 
 export NVM_DIR="$HOME/.nvm"
