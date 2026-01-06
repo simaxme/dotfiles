@@ -2,3 +2,6 @@
 .nvim
 bin
 .DS_Store
+.project
+.settings
+.classpath
