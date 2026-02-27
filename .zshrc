@@ -132,6 +132,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+bindkey '^[[1;3C' forward-word
+bindkey '^[[1;3D' backward-word
+
 alias gitdifftool="git difftool --staged"
 alias gitlog="git log --graph --source --all"
 alias ssh-add-auto="ssh-add -t 4h ~/.ssh/signing_key"
