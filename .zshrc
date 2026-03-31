@@ -42,7 +42,6 @@ alias ssh-add-auto="ssh-add -t 4h ~/.ssh/signing_key"
 
 export NVM_DIR="$HOME/.nvm"
     [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
-    [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 
 export MANPAGER="nvim +Man\!"
@@ -51,9 +50,3 @@ export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
 [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-source $(brew --prefix nvm)/nvm.sh
-
-
-# Created by `pipx` on 2024-08-28 06:47:25
-export PATH="$PATH:/Users/simon/.local/bin"
