@@ -1,10 +1,17 @@
-# My dotfiles for Macos
+# My dotfiles
 
-These are my dotfiles for macos.
+These are my dotfiles for macos and linux.
 
 ## Install
 
-Just run
+### MacOS
+Run
 ```
-bash ./install.bash
+bash ./install_macos.sh
+```
+
+### Linux (WSL)
+Run
+```
+bash ./install_linux_wsl.sh
 ```
