@@ -1,4 +1,4 @@
-eval $(/opt/homebrew/bin/brew shellenv)
+[[ "$OSTYPE" == "darwin"* ]] && eval $(/opt/homebrew/bin/brew shellenv)
 
 [ -z "$TMUX"  ] && [ -n "$KITTY_TMUX" ] && { 
     if tmux has-session 2>/dev/null; then
@@ -41,12 +41,19 @@ alias gitlog="git log --graph --source --all"
 alias ssh-add-auto="ssh-add -t 4h ~/.ssh/signing_key"
 
 export NVM_DIR="$HOME/.nvm"
-    [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # MacOS
+  [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+
+
+  export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
+  [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+else
+  # Linux
+fi
 
 
 export MANPAGER="nvim +Man\!"
-
-export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
-[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
