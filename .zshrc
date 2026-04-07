@@ -51,6 +51,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 else
   # Linux
+  export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
   
   if uname -r | grep -q "microsoft"; then 
     export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
