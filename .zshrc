@@ -51,8 +51,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 else
   # Linux
+  
+  if uname -r | grep -q "microsoft"; then 
+    export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+  fi
 fi
-
 
 export MANPAGER="nvim +Man\!"
 
