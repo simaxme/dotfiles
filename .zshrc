@@ -1,6 +1,6 @@
 [[ "$OSTYPE" == "darwin"* ]] && eval $(/opt/homebrew/bin/brew shellenv)
 
-[ -z "$TMUX"  ] && [ -n "$KITTY_TMUX" ] && { 
+[ -z "$TMUX"  ] && [[ -n "$KITTY_TMUX" || -n "$WT_SESSION" ]] && {
     if tmux has-session 2>/dev/null; then
         echo "There already is existing an existing session. Do you want to continue it?"
         read response
