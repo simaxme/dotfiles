@@ -21,5 +21,8 @@ else
   if uname -r | grep -q "microsoft"; then
     # Linux (WSL)
     :
+  else
+    # Linux (Not WSL)
+    cp -r ./pipewire ~/.config
   fi
 fi
