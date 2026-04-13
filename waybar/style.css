@@ -56,3 +56,7 @@ window#waybar {
 #wireplumber {
   color: @mauve;
 }
+
+#custom-music {
+  color: @green;
+}

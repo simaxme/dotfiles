@@ -4,7 +4,7 @@
     "sway/workspaces"
   ],
   "modules-center": [
-    "sway/window"
+    "custom/music"
   ],
   "modules-right": [
     "tray",
@@ -16,9 +16,6 @@
   "margin-left": 5,
   "margin-right": 5,
   "height": 20,
-  "sway/window": {
-    "max-length": 50
-  },
   "tray": {
     "icon-size": 20,
     "spacing": 10
@@ -32,5 +29,10 @@
   "wireplumber": {
     "format": "   {volume}%",
     "format-muted": "   {volume}%"
+  },
+  "custom/music": {
+    "exec": "playerctl -f \"{{title}} - {{artist}}\" --follow metadata",
+    "format": "󰲹  {}",
+    "max-length": 50
   }
 }
