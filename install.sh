@@ -24,5 +24,6 @@ else
   else
     # Linux (Not WSL)
     cp -r ./pipewire ~/.config
+    cp -r ./sway ~/.config
   fi
 fi

@@ -1,0 +1,130 @@
+set $mod Mod4
+
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Background
+output * bg /usr/share/backgrounds/archlinux/split.png fill
+# ---
+
+# Setup Displays
+set $disp1 = DP-7
+set $disp2 = eDP-1
+
+output eDP-1 pos 0 800 mode 2880x1800@120Hz scale 2
+output DP-7 pos 1440 0
+
+workspace 1 output $disp1 $disp2
+workspace 2 output $disp1 $disp2
+workspace 3 output $disp1 $disp2
+workspace 4 output $disp1 $disp2
+workspace 5 output $disp1 $disp2
+workspace 6 output $disp1 $disp2
+workspace 7 output $disp1 $disp2
+workspace 8 output $disp2
+workspace 9 output $disp2
+workspace 10 output $disp2
+
+# This is required to tell sway to open workspaces 8 and 1 by default
+workspace 8
+# If only one monitor is existing, 1 will always be the default!
+workspace 1
+# ---
+
+# Setup Inputs
+input type:keyboard {
+    xkb_layout "de"
+}
+input type:touchpad {
+    natural_scroll enabled
+}
+input type:pointer {
+    natural_scroll enabled
+}
+# ---
+
+# Update config
+bindsym $mod+Shift+c reload
+
+# Control workspaces and windows
+bindsym $mod+Shift+q kill
+
+floating_modifier $mod normal
+
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+bindsym $mod+f fullscreen
+
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+
+bindsym $mod+Control+$left resize shrink width 50px
+bindsym $mod+Control+$up resize grow height 50px
+bindsym $mod+Control+$down resize shrink height 50px
+bindsym $mod+Control+$right resize grow width 50px
+
+# Media Keys
+bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+
+bindsym --locked XF86AudioPlay exec playerctl play-pause
+bindsym --locked XF86AudioNext exec playerctl next
+bindsym --locked XF86AudioPrev exec playerctl previous
+
+# Borders
+default_border pixel 4
+gaps inner 10
+
+# App hotkeys
+bindsym $mod+Return exec kitty
+bindsym $mod+d exec rofi -show drun
+
+# Default Apps to start
+bar swaybar_command waybar
+exec nm-applet
+exec spotify-launcher
+
+# Set workspace per app
+assign [app_id="spotify"] workspace number 8
+
+include /etc/sway/config.d/*
