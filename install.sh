@@ -27,5 +27,6 @@ else
     cp -r ./sway ~/.config
     cp -r ./waybar ~/.config
     cp -r ./rofi ~/.config
+    cp -r ./gtk-3.0 ~/.config
   fi
 fi
