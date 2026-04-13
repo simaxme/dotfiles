@@ -25,5 +25,6 @@ else
     # Linux (Not WSL)
     cp -r ./pipewire ~/.config
     cp -r ./sway ~/.config
+    cp -r ./waybar ~/.config
   fi
 fi
