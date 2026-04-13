@@ -127,4 +127,13 @@ exec spotify-launcher
 # Set workspace per app
 assign [app_id="spotify"] workspace number 8
 
+include ./catppuccin/catppuccin-mocha
+
+client.focused           $lavender $base $text  $red $lavender
+client.focused_inactive  $overlay0 $base $text  $red $overlay0
+client.unfocused         $overlay0 $base $text  $red $overlay0
+client.urgent            $peach    $base $peach $red  $peach
+client.placeholder       $overlay0 $base $text  $red  $overlay0
+client.background        $base
+
 include /etc/sway/config.d/*
