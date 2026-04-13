@@ -69,5 +69,6 @@ else
 fi
 
 export MANPAGER="nvim +Man\!"
+export EDITOR="nvim"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
