@@ -63,6 +63,8 @@ else
 
   if uname -r | grep -q "microsoft"; then
     export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+  else
+    export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
   fi
 fi
 
