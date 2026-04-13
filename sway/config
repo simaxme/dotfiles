@@ -112,7 +112,7 @@ bindsym --locked XF86AudioNext exec playerctl next
 bindsym --locked XF86AudioPrev exec playerctl previous
 
 # Borders
-default_border pixel 4
+default_border pixel 2
 gaps inner 10
 
 # Cursor
