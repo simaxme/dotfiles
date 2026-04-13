@@ -26,5 +26,6 @@ else
     cp -r ./pipewire ~/.config
     cp -r ./sway ~/.config
     cp -r ./waybar ~/.config
+    cp -r ./rofi ~/.config
   fi
 fi
