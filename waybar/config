@@ -12,11 +12,25 @@
     "battery",
     "clock"
   ],
+  "margin-top": 5,
+  "margin-left": 5,
+  "margin-right": 5,
+  "height": 20,
   "sway/window": {
     "max-length": 50
   },
   "tray": {
     "icon-size": 20,
     "spacing": 10
+  },
+  "clock": {
+    "format": "  {:%H:%M}"
+  },
+  "battery": {
+    "format": "󰁺 {capacity}%"
+  },
+  "wireplumber": {
+    "format": "   {volume}%",
+    "format-muted": "   {volume}%"
   }
 }
