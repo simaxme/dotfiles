@@ -8,6 +8,7 @@
   ],
   "modules-right": [
     "tray",
+    "memory",
     "wireplumber",
     "battery",
     "clock"
@@ -29,6 +30,9 @@
   "wireplumber": {
     "format": "   {volume}%",
     "format-muted": "   {volume}%"
+  },
+  "memory": {
+    "format": "   {used:0.1f}GiB/{total:0.0f}GiB"
   },
   "custom/music": {
     "exec": "playerctl -f \"{{title}} - {{artist}}\" --follow metadata",

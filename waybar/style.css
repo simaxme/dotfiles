@@ -60,3 +60,7 @@ window#waybar {
 #custom-music {
   color: @green;
 }
+
+#memory {
+  color: @flamingo;
+}
