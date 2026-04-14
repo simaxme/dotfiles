@@ -33,6 +33,7 @@
   "custom/music": {
     "exec": "playerctl -f \"{{title}} - {{artist}}\" --follow metadata",
     "format": "󰲹  {}",
-    "max-length": 50
+    "max-length": 50,
+    "on-click": "playerctl play-pause"
   }
 }
