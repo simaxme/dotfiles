@@ -138,6 +138,7 @@ exec dunst
 
 # Set workspace per app
 assign [app_id="spotify"] workspace number 8
+assign [app_id="discord"] workspace number 9
 
 include ./catppuccin/catppuccin-mocha
 
