@@ -134,6 +134,7 @@ exec nm-applet
 exec spotify-launcher
 exec jetbrains-toolbox --minimize
 exec cryptomator
+exec dunst
 
 # Set workspace per app
 assign [app_id="spotify"] workspace number 8

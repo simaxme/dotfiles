@@ -1,0 +1,7 @@
+[global]
+  follow = keyboard
+
+  offset = (20, 20)
+  gap_size = 10
+  frame_width = 0
+  corner_radius = 5

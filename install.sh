@@ -28,5 +28,6 @@ else
     cp -r ./waybar ~/.config
     cp -r ./rofi ~/.config
     cp -r ./gtk-3.0 ~/.config
+    cp -r ./dunst ~/.config
   fi
 fi
