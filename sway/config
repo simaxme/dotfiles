@@ -130,6 +130,7 @@ bar swaybar_command waybar
 exec nm-applet
 exec spotify-launcher
 exec jetbrains-toolbox --minimize
+exec cryptomator
 
 # Set workspace per app
 assign [app_id="spotify"] workspace number 8
