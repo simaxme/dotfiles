@@ -138,8 +138,6 @@ exec dunst
 
 # Set workspace per app
 assign [app_id="spotify"] workspace number 8
-# This is a special case when spotify falls back to xwayland
-assign [class="Spotify"] workspace number 8
 
 include ./catppuccin/catppuccin-mocha
 

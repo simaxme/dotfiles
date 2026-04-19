@@ -29,5 +29,6 @@ else
     cp -r ./rofi ~/.config
     cp -r ./gtk-3.0 ~/.config
     cp -r ./dunst ~/.config
+    cp -r ./spotify-launcher.conf ~/.config
   fi
 fi
