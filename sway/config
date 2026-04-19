@@ -115,7 +115,7 @@ bindsym --locked XF86AudioNext exec playerctl next
 bindsym --locked XF86AudioPrev exec playerctl previous
 
 # Screenshot
-bindsym $mod+Shift+s exec grim -g "$(slurp)" - | tee ~/Documents/Screenshots/$(date +"%s_screenshot.png") | wl-copy
+bindsym $mod+Shift+s exec grim -g "$(slurp)" - | tee ~/Documents/Screenshots/$(date +"%s_screenshot.png") | wl-copy && notify-send "Screenshot taken!" || notify-send "Error while taking screenshot."
 
 # Borders
 default_border pixel 2
