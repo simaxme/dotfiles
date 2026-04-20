@@ -1,24 +1,7 @@
 [[ "$OSTYPE" == "darwin"* ]] && eval $(/opt/homebrew/bin/brew shellenv)
 
 [ -z "$TMUX"  ] && [[ -n "$KITTY_TMUX" || -n "$WT_SESSION" ]] && {
-    if tmux has-session 2>/dev/null; then
-        echo "There already is existing an existing session. Do you want to continue it?"
-        read response
-
-        echo "$response"
-
-        test="hallo"
-        test2="tets"
-
-        if [ "$response" = "yes" ]; then
-            exec tmux attach && exit 1
-        else
-            exec tmux new-session && exit 1
-        fi
-    else
-        exec tmux new-session && exit 1
-    fi
-    exit
+  exec tmux new-session && exit 1
 }
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
