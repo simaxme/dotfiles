@@ -131,7 +131,7 @@ bindsym $mod+d exec rofi -show drun
 # Default Apps to start
 bar swaybar_command waybar
 exec nm-applet
-exec spotify-launcher
+exec spotify-launcher --skip-update
 exec jetbrains-toolbox --minimize
 exec cryptomator
 exec dunst
