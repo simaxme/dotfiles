@@ -65,3 +65,7 @@ window#waybar {
 #memory {
   color: @flamingo;
 }
+
+#bluetooth.connected {
+  color: @blue;
+}

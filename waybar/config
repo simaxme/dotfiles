@@ -9,6 +9,7 @@
   "modules-right": [
     "tray",
     "memory",
+    "bluetooth",
     "wireplumber",
     "battery",
     "clock"
@@ -31,6 +32,12 @@
     "format": "   {volume}%",
     "format-muted": "   {volume}%",
     "on-click": "kitty wiremix"
+  },
+  "bluetooth": {
+    "format": "󰂯",
+    "format-connected": "󰂯 {num_connections}",
+    "tooltip-format": "{device_alias}",
+    "on-click": "kitty bluetui"
   },
   "memory": {
     "format": "   {used:0.1f}GiB/{total:0.0f}GiB"
