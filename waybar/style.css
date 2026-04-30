@@ -69,3 +69,11 @@ window#waybar {
 #bluetooth.connected {
   color: @blue;
 }
+
+#custom-lock {
+  color: @red;
+}
+
+#custom-suspend {
+  color: @blue;
+}

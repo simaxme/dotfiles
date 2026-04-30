@@ -12,7 +12,8 @@
     "bluetooth",
     "wireplumber",
     "battery",
-    "clock"
+    "clock",
+    "group/power"
   ],
   "margin-top": 5,
   "margin-left": 5,
@@ -47,5 +48,26 @@
     "format": "󰲹  {}",
     "max-length": 50,
     "on-click": "playerctl play-pause"
+  },
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/lock",
+      "custom/suspend"
+    ]
+  },
+  "custom/lock": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "swaylock"
+  },
+  "custom/suspend": {
+    "format": " 󰒲 ",
+    "tooltip": false,
+    "on-click": "systemctl suspend"
   }
 }
