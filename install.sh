@@ -25,7 +25,7 @@ else
     # Linux (Not WSL)
     cp -r ./pipewire ~/.config
     mkdir -p ~/.config/sway
-    cat ./sway/config | sed "s/%DISPLAY_NAME%/'$(cat display.txt || echo DP-7)'/g" > ~/.config/sway/config
+    cat ./sway/config | sed "s/%DISPLAY_NAME%/$(cat display.txt || echo DP-7)/g" > ~/.config/sway/config
     cp -r ./swaylock ~/.config
     cp -r ./swayidle ~/.config
     cp -r ./waybar ~/.config
