@@ -63,7 +63,7 @@
   "custom/lock": {
     "format": "",
     "tooltip": false,
-    "on-click": "swaylock"
+    "on-click": "swaymsg exec swaylock"
   },
   "custom/suspend": {
     "format": " 󰒲 ",
