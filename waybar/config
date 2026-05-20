@@ -11,6 +11,7 @@
     "memory",
     "bluetooth",
     "wireplumber",
+    "wireplumber#microphone",
     "battery",
     "clock",
     "group/power"
@@ -33,6 +34,14 @@
     "format": "   {volume}%",
     "format-muted": "   {volume}%",
     "on-click": "kitty wiremix"
+  },
+  "wireplumber#microphone": {
+    "node-type": "Audio/Source",
+    "format": "󰍬",
+    "format-muted": "󰍭",
+    "on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
+    "on-scroll-up": "",
+    "on-scroll-down": ""
   },
   "bluetooth": {
     "format": "󰂯",

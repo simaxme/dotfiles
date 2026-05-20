@@ -58,6 +58,14 @@ window#waybar {
   color: @mauve;
 }
 
+#wireplumber.microphone {
+  color: @text;
+}
+
+#wireplumber.microphone.muted {
+  color: @red;
+}
+
 #custom-music {
   color: @green;
 }
