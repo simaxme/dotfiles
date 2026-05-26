@@ -124,6 +124,9 @@ bindsym --locked XF86AudioPrev exec playerctl previous
 # Screenshot
 bindsym $mod+Shift+s exec grim -g "$(slurp)" - | tee ~/Documents/Screenshots/$(date +"%s_screenshot.png") | wl-copy && notify-send "Screenshot taken!" || notify-send "Error while taking screenshot."
 
+# Screen Share
+bindsym $mod+minus exec pgrep -x "wl-mirror" && pkill wl-mirror || wl-mirror --fullscreen eDP-1
+
 # Borders
 default_border pixel 2
 gaps inner 10
