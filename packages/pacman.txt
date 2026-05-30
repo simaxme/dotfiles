@@ -38,6 +38,7 @@ pipewire-pulse
 rclone
 ripgrep
 rofi
+rofimoji
 slurp
 sof-firmware
 spotify-launcher
@@ -58,6 +59,7 @@ waybar
 wiremix
 wl-clipboard
 wl-mirror
+wtype
 xdg-desktop-portal
 xdg-desktop-portal-wlr
 xorg-xwayland
