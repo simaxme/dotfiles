@@ -9,6 +9,7 @@ brightnessctl
 chromium
 discord
 docker
+docker-compose
 dunst
 exfatprogs
 firefox
@@ -29,11 +30,13 @@ man-pages
 neovim
 network-manager-applet
 networkmanager
+noto-fonts
+noto-fonts-emoji
 nvm
 obsidian
-otf-font-awesome
 pipewire-pulse
 rclone
+ripgrep
 rofi
 slurp
 sof-firmware
@@ -42,6 +45,8 @@ stress
 sudo
 sway
 swaybg
+swayidle
+swaylock
 thunar
 tk
 tlp
@@ -52,6 +57,7 @@ vulkan-intel
 waybar
 wiremix
 wl-clipboard
+wl-mirror
 xdg-desktop-portal
 xdg-desktop-portal-wlr
 xorg-xwayland
