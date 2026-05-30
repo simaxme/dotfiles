@@ -4,17 +4,17 @@
   exec tmux new-session && exit 1
 }
 
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+
+PROMPT="${PROMPT:45} %?"
+PROMPT="$(echo "$PROMPT" | sed 's/%c/%~/g')"
+PROMPT+=$'\n\033[1;32m  \033[0m'
 
 bindkey '^[[1;3C' forward-word
 bindkey '^[[1;3D' backward-word
@@ -53,5 +53,3 @@ fi
 
 export MANPAGER="nvim +Man\!"
 export EDITOR="nvim"
-
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
