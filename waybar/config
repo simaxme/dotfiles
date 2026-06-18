@@ -33,7 +33,9 @@
   "wireplumber": {
     "format": "   {volume}%",
     "format-muted": "   {volume}%",
-    "on-click": "kitty wiremix"
+    "on-click": "kitty wiremix",
+    "reverse-scrolling": true,
+    "reverse-mouse-scrolling": true
   },
   "wireplumber#microphone": {
     "node-type": "Audio/Source",
