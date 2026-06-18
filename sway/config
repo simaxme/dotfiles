@@ -136,6 +136,7 @@ seat seat0 xcursor_theme catppuccin-mocha-dark-cursors 24
 
 # App hotkeys
 bindsym $mod+Return exec kitty
+bindsym $mod+BackSpace exec thunar
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+Shift+d exec rofimoji --action clipboard
 
