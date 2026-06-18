@@ -63,7 +63,8 @@ window#waybar {
 }
 
 #wireplumber.microphone.muted {
-  color: @red;
+  color: @base;
+  background-color: @red;
 }
 
 #custom-music {
