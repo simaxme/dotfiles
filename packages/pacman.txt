@@ -21,6 +21,7 @@ intel-media-driver
 intel-ucode
 jdk21-openjdk
 jdk25-openjdk
+jq
 kitty
 libfido2
 linux
@@ -35,6 +36,7 @@ noto-fonts-emoji
 nvm
 obsidian
 pipewire-pulse
+poppler-glib
 rclone
 ripgrep
 rofi
@@ -53,6 +55,7 @@ tk
 tlp
 tmux
 ttf-cascadia-mono-nerd
+tumbler
 unzip
 vulkan-intel
 waybar
