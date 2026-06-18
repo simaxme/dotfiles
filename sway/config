@@ -33,6 +33,8 @@ workspace 8
 workspace 1
 # ---
 
+focus_on_window_activation focus
+
 # Setup Inputs
 input type:keyboard {
     xkb_layout "de"
