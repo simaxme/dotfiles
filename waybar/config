@@ -39,8 +39,8 @@
   },
   "wireplumber#microphone": {
     "node-type": "Audio/Source",
-    "format": "󰍬",
-    "format-muted": "󰍭",
+    "format": "󰍬 {source_volume}%",
+    "format-muted": "󰍭 {source_volume}%",
     "on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
     "on-scroll-up": "",
     "on-scroll-down": ""
