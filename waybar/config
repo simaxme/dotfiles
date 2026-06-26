@@ -39,11 +39,12 @@
   },
   "wireplumber#microphone": {
     "node-type": "Audio/Source",
-    "format": "󰍬 {source_volume}%",
-    "format-muted": "󰍭 {source_volume}%",
+    "format": "󰍬 {volume}%",
+    "format-muted": "󰍭 {volume}%",
     "on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
-    "on-scroll-up": "",
-    "on-scroll-down": ""
+    "reverse-scrolling": true,
+    "reverse-mouse-scrolling": true,
+    "max-volume": 150
   },
   "bluetooth": {
     "format": "󰂯",
