@@ -33,5 +33,8 @@ else
     cp -r ./gtk-3.0 ~/.config
     cp -r ./dunst ~/.config
     cp -r ./spotify-launcher.conf ~/.config
+
+    xdg-mime default "firefox.desktop" "application/pdf"
+    xdg-mime default "thunar.desktop" "inode/directory"
   fi
 fi
