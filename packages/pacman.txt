@@ -1,4 +1,5 @@
 archlinux-wallpaper
+audacity
 base
 base-devel
 bluetui
@@ -37,6 +38,7 @@ nvm
 obsidian
 pipewire-pulse
 poppler-glib
+protonmail-bridge
 rclone
 ripgrep
 rofi
@@ -51,6 +53,7 @@ swaybg
 swayidle
 swaylock
 thunar
+thunderbird
 tk
 tlp
 tmux
