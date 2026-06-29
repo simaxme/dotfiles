@@ -25,6 +25,8 @@ jdk25-openjdk
 jq
 kitty
 libfido2
+libreoffice-still
+libreoffice-still-de
 linux
 linux-firmware
 man-db
