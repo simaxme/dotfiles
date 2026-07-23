@@ -22,6 +22,7 @@ bindkey '^[[1;3D' backward-word
 alias gitdifftool="git difftool --staged"
 alias gitlog="git log --graph --source --all"
 alias ssh-add-auto="ssh-add -t 4h ~/.ssh/signing_key"
+alias list-orphaned-packages="pacman -Qqdt"
 
 export NVM_DIR="$HOME/.nvm"
 
