@@ -38,6 +38,7 @@ noto-fonts
 noto-fonts-emoji
 nvm
 obsidian
+pdfarranger
 pipewire-pulse
 poppler-glib
 protonmail-bridge
