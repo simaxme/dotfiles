@@ -86,3 +86,7 @@ window#waybar {
 #custom-suspend {
   color: @blue;
 }
+
+#language {
+  color: @lavender;
+}

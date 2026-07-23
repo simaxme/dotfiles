@@ -6,6 +6,7 @@
   ],
   "modules-right": [
     "tray",
+    "sway/language",
     "memory",
     "bluetooth",
     "wireplumber",
@@ -73,5 +74,9 @@
     "format": " 󰒲 ",
     "tooltip": false,
     "on-click": "systemctl suspend"
+  },
+  "sway/language": {
+    "format": "   {short} {variant}",
+    "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
   }
 }
