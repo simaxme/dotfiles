@@ -11,6 +11,7 @@
     "bluetooth",
     "wireplumber",
     "wireplumber#microphone",
+    "custom/loopback",
     "battery",
     "clock",
     "group/power"
@@ -44,6 +45,12 @@
     "reverse-scrolling": true,
     "reverse-mouse-scrolling": true,
     "max-volume": 150
+  },
+  "custom/loopback": {
+    "exec": "~/.config/waybar/scripts/loopback.sh",
+    "return-type": "json",
+    "interval": 30,
+    "on-click": "~/.config/waybar/scripts/start-loopback.sh"
   },
   "bluetooth": {
     "format": "󰂯",

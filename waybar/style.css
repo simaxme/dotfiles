@@ -87,6 +87,14 @@ window#waybar {
   color: @blue;
 }
 
+#custom-loopback {
+  color: @red;
+}
+
+#custom-loopback.loopback-active {
+  color: @green;
+}
+
 #language {
   color: @lavender;
 }
