@@ -150,6 +150,7 @@ exec spotify-launcher --skip-update
 exec cryptomator
 exec dunst
 exec swayidle -w
+exec easyeffects --gapplication-service
 
 # Set workspace per app
 assign [app_id="spotify"] workspace number 8
