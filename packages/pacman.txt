@@ -7,13 +7,16 @@ bluez
 bluez-utils
 bolt
 brightnessctl
+calf
 chromium
 discord
 docker
 docker-compose
 dunst
+easyeffects
 exfatprogs
 firefox
+fwupd
 git
 gnome-keyring
 grim
@@ -24,11 +27,13 @@ jdk21-openjdk
 jdk25-openjdk
 jq
 kitty
+lib32-vulkan-intel
 libfido2
 libreoffice-still
 libreoffice-still-de
 linux
 linux-firmware
+lsp-plugins
 man-db
 man-pages
 neovim
@@ -42,6 +47,9 @@ pdfarranger
 pipewire-pulse
 poppler-glib
 protonmail-bridge
+python-matplotlib
+python-numpy
+python-pandas
 rclone
 ripgrep
 rofi
@@ -49,6 +57,7 @@ rofimoji
 slurp
 sof-firmware
 spotify-launcher
+steam
 stress
 sudo
 sway
@@ -62,6 +71,7 @@ tlp
 tmux
 ttf-cascadia-mono-nerd
 tumbler
+udisks2
 unzip
 vulkan-intel
 waybar
@@ -69,6 +79,7 @@ wiremix
 wl-clipboard
 wl-mirror
 wtype
+x42-plugins
 xdg-desktop-portal
 xdg-desktop-portal-wlr
 xorg-xwayland

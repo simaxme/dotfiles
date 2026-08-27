@@ -2,5 +2,4 @@ catppuccin-cursors-mocha
 cryptomator-bin
 jetbrains-toolbox
 yay
-yay-debug
 yubico-authenticator-bin
