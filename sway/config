@@ -14,7 +14,7 @@ set $disp1 = "%DISPLAY_NAME%"
 set $disp2 = eDP-1
 
 output eDP-1 pos 0 800 mode 2880x1800@120Hz scale 2
-output "%DISPLAY_NAME%" pos 1440 0
+output "%DISPLAY_NAME%" pos 1440 0 mode 3440x1440@99.982Hz
 
 workspace 1 output $disp1 $disp2
 workspace 2 output $disp1 $disp2
