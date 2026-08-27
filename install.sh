@@ -23,6 +23,7 @@ else
     :
   else
     # Linux (Not WSL)
+    cp ./.zprofile ~/.zprofile
     cp -r ./pipewire ~/.config
     cp -r ./wireplumber ~/.config
     cp -r ./sway ~/.config
@@ -32,6 +33,7 @@ else
     cp -r ./waybar ~/.config
     cp -r ./rofi ~/.config
     cp -r ./gtk-3.0 ~/.config
+    cp -r ./gtk-4.0 ~/.config
     cp -r ./dunst ~/.config
     cp -r ./spotify-launcher.conf ~/.config
 
