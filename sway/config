@@ -147,7 +147,6 @@ bindsym $mod+Shift+d exec rofimoji --action clipboard
 bar swaybar_command waybar
 exec nm-applet
 exec spotify-launcher --skip-update
-exec jetbrains-toolbox --minimize
 exec cryptomator
 exec dunst
 exec swayidle -w
