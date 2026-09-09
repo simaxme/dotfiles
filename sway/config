@@ -152,6 +152,9 @@ exec dunst
 exec swayidle -w
 exec easyeffects --gapplication-service
 
+# Bluetooth autoconnect
+exec ~/.config/sway/scripts/bl_auto_connect.sh
+
 # Set workspace per app
 assign [app_id="spotify"] workspace number 8
 assign [app_id="discord"] workspace number 9
