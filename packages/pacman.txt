@@ -54,6 +54,7 @@ rclone
 ripgrep
 rofi
 rofimoji
+sbctl
 slurp
 sof-firmware
 spotify-launcher
@@ -68,6 +69,7 @@ thunar
 thunderbird
 tk
 tlp
+tlp-rdw
 tmux
 ttf-cascadia-mono-nerd
 tumbler
