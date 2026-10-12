@@ -12,10 +12,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-PROMPT="${PROMPT:45} %?"
-PROMPT="$(echo "$PROMPT" | sed 's/%c/%~/g')"
-PROMPT+=$'\n\033[1;32m  \033[0m'
-
 bindkey '^[[1;3C' forward-word
 bindkey '^[[1;3D' backward-word
 
