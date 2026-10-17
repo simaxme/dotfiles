@@ -35,7 +35,11 @@ else
     cp -r ./gtk-3.0 ~/.config
     cp -r ./gtk-4.0 ~/.config
     cp -r ./dunst ~/.config
+    cat ./dunst/dunstrc | sed "s|%%HOME%%|$HOME|g" > ~/.config/dunst/dunstrc
     cp -r ./spotify-launcher.conf ~/.config
+
+    mkdir -p ~/.local/bin
+    cp ./local_bin/notification-sound.sh ~/.local/bin/notification-sound
 
     xdg-mime default "firefox.desktop" "application/pdf"
     xdg-mime default "thunar.desktop" "inode/directory"
