@@ -6,6 +6,7 @@
   ],
   "modules-right": [
     "tray",
+    "custom/cloud",
     "sway/language",
     "memory",
     "bluetooth",
@@ -78,5 +79,11 @@
   "sway/language": {
     "format": "   {short} {variant}",
     "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+  },
+  "custom/cloud": {
+    "exec": "$HOME/.config/waybar/scripts/rclone-bisync-status.sh",
+    "return-type": "json",
+    "interval": 60,
+    "signal": 9
   }
 }

@@ -71,6 +71,20 @@ window#waybar {
   color: @green;
 }
 
+#custom-cloud.syncing {
+  color: @blue;
+  padding-right: 14px;
+}
+
+#custom-cloud.failed {
+  color: @base;
+  background-color: @red;
+}
+
+#custom-cloud.success {
+  color: @green;
+}
+
 #memory {
   color: @flamingo;
 }

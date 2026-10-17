@@ -1,0 +1,6 @@
+[Unit]
+Description=Rclone Sync Waybar Refresh
+
+[Service]
+Type=oneshot
+ExecStart=-/usr/bin/pkill -RTMIN+9 waybar

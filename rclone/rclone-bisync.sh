@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+pkill -RTMIN+9 waybar || true # Update waybar module
+
 RCLONE_REMOTES=$'%%REMOTES%%'
 RCLONE_SYNC_FOLDER="$HOME/Documents/Cloud"
 

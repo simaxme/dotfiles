@@ -2,6 +2,8 @@
 Description=Rclone Sync
 Wants=network-online.target
 After=network-online.target
+OnSuccess=waybar-rclone-bisync-refresh.service
+OnFailure=waybar-rclone-bisync-refresh.service
 
 [Service]
 Type=oneshot

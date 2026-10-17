@@ -7,6 +7,7 @@ cd "$(dirname "$0")/.."
 RCLONE_REMOTES_FILE="$(pwd)/rclone/remotes.txt"
 RCLONE_BISYNC_SCRIPT="$(pwd)/rclone/rclone-bisync.sh"
 RCLONE_BISYNC_SERVICE="$(pwd)/rclone/rclone-bisync.service"
+RCLONE_BISYNC_WAYBAR_SERVICE="$(pwd)/rclone/waybar-rclone-bisync-refresh.service"
 RCLONE_BISYNC_TIMER="$(pwd)/rclone/rclone-bisync.timer"
 RCLONE_REMOTES="$(rclone listremotes)"
 
@@ -67,6 +68,9 @@ if [ -f "$RCLONE_REMOTES_FILE" ]; then
   mkdir -p "$HOME/.config/systemd/user"
   cp "$RCLONE_BISYNC_SERVICE" "$HOME/.config/systemd/user"
   cp "$RCLONE_BISYNC_TIMER" "$HOME/.config/systemd/user"
+  cp "$RCLONE_BISYNC_WAYBAR_SERVICE" "$HOME/.config/systemd/user"
+
+  systemctl --user daemon-reload
 else
   echo "No rclone remotes file found. Creating one. Please fill it out."
 
