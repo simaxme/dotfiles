@@ -48,5 +48,6 @@ else
   fi
 fi
 
+export PATH="$HOME/.local/bin:$PATH"
 export MANPAGER="nvim +Man\!"
 export EDITOR="nvim"
