@@ -40,6 +40,7 @@ else
 
     mkdir -p ~/.local/bin
     cp ./local_bin/notification-sound.sh ~/.local/bin/notification-sound
+    cp ./local_bin/safe-shutdown.sh ~/.local/bin/safe-shutdown
 
     xdg-mime default "firefox.desktop" "application/pdf"
     xdg-mime default "thunar.desktop" "inode/directory"
