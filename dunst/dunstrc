@@ -6,4 +6,6 @@
   frame_width = 0
   corner_radius = 5
 
+  timeout = 15
+
   script = %%HOME%%/.local/bin/notification-sound
