@@ -86,6 +86,6 @@
     "interval": 60,
     "signal": 9,
     "on-click": "systemctl --user start --no-block rclone-bisync",
-    "on-click-right": "kitty journalctl --user --unit \"rclone-bisync.service\" --follow"
+    "on-click-right": "swaymsg exec 'kitty journalctl --user --unit \"rclone-bisync.service\" --follow'"
   }
 }
