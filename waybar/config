@@ -84,6 +84,8 @@
     "exec": "$HOME/.config/waybar/scripts/rclone-bisync-status.sh",
     "return-type": "json",
     "interval": 60,
-    "signal": 9
+    "signal": 9,
+    "on-click": "systemctl --user start --no-block rclone-bisync",
+    "on-click-right": "kitty journalctl --user --unit \"rclone-bisync.service\" --follow"
   }
 }
