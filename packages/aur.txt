@@ -1,5 +1,6 @@
 catppuccin-cursors-mocha
 cryptomator-bin
 jetbrains-toolbox
+slack-desktop
 yay
 yubico-authenticator-bin
