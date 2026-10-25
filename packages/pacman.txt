@@ -16,7 +16,9 @@ dunst
 easyeffects
 exfatprogs
 firefox
+flatpak
 fwupd
+gimp
 git
 gnome-keyring
 grim
@@ -83,6 +85,7 @@ wl-mirror
 wtype
 x42-plugins
 xdg-desktop-portal
+xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xorg-xwayland
 zip
