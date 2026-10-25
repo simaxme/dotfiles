@@ -20,6 +20,7 @@ printf '%s' "$RCLONE_REMOTES" | while read -r line; do
     --create-empty-src-dirs \
     --resilient \
     --recover \
+    --max-lock 2m \
     --stats 15s \
     --verbose \
     2>&1 | tee "$HOME/.local/state/rclone/bisync-$(date +"%Y_%m_%d-%H_%M").log"
