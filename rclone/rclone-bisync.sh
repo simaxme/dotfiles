@@ -16,11 +16,21 @@ printf '%s' "$RCLONE_REMOTES" | while read -r line; do
 
   START_TIME=$SECONDS
 
+  BACKUP_DIR_REMOTE="${line}-bak"
+  BACKUP_DIR_LOCAL="$RCLONE_SYNC_FOLDER/${path}-bak"
+
+  mkdir -p "$BACKUP_DIR_LOCAL"
+  rclone mkdir "$BACKUP_DIR_REMOTE"
+
   rclone bisync "$line" "$RCLONE_SYNC_FOLDER/$path" \
     --create-empty-src-dirs \
     --resilient \
     --recover \
     --max-lock 2m \
+    --conflict-resolve newer \
+    --conflict-loser num \
+    --backup-dir1 "$BACKUP_DIR_REMOTE" \
+    --backup-dir2 "$BACKUP_DIR_LOCAL" \
     --stats 15s \
     --verbose \
     2>&1 | tee "$HOME/.local/state/rclone/bisync-$(date +"%Y_%m_%d-%H_%M").log"
